@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form">
+            <div class="heading">
+            <h1>Add Patient Details</h1>
+            </div>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="patientform">
+                <div>
+                    <label id="forname" >Name</label><label class="validation-error hide" id="NameValidationError">This field is required.</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label id="forage">Age</label>
+                    <input type="text" name="age" id="age">
+                </div>
+                <div>
+                    <label id="forlocation">Location</label>
+                    <input type="text" name="location" id="location">
+                </div>
+                <div  class="form-action-buttons formfooter">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -8,15 +8,16 @@ function onFormSubmit() {
         location:{
                     latitude:document.getElementById('latitude').value,
                     longitude:document.getElementById('latitude').value,
-                    date:{
+                    date: {
                         day:document.getElementById('day').value,
                         month:document.getElementById('month').value,
-                    }
+                    },
                     time:document.getElementById('time').value,
                 }
       }
       infected.push(data);
       console.log('added', {infected});
       i++;
+    localStorage.setItem('Infected', JSON.stringify(infected));
    
 }

@@ -5,7 +5,15 @@ function onFormSubmit() {
         id:i,
         name:document.getElementById('name').value,
         age:document.getElementById('age').value,
-        location:document.getElementById('location').value,
+        location:{
+                    latitude:document.getElementById('latitude').value,
+                    longitude:document.getElementById('latitude').value,
+                    date:{
+                        day:document.getElementById('day').value,
+                        month:document.getElementById('month').value,
+                    }
+                    time:document.getElementById('time').value,
+                }
       }
       infected.push(data);
       console.log('added', {infected});

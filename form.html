@@ -25,12 +25,39 @@
                     <label id="forlocation">Location</label>
                     <input type="text" name="location" id="location">
                 </div>
+                <div class="daymonthtime">
+                    <div class="dmt">
+                        <label>Day</label>
+                        <input type="text" id="day" name="day">
+                    </div>
+                    <div class="dmt"> 
+                        <label>Month</label>
+                        <input type="text" id="month" name="month">
+                    </div>
+                    <div class="dmt">
+                        <label>Time (only hr)</label>
+                        <input type="text" id="time" name="time" placeholder="Eg: 12">
+                    </div>
+                </div>
+                <div>
+                    <label>Latitude</label>
+                    <input type="text" id="latitude" name="latitude" placeholder="don't fill">
+                </div>
+                <div>
+                    <label>Longitude</label>
+                    <input type="text" id="longitude" name="longitude" placeholder="don't fill">
+                </div>
+                <div>
+                    
+                </div>
                 <div  class="form-action-buttons formfooter">
                     <input type="submit" value="Submit">
                 </div>
                 
             </form>
         </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBwBmtP7fuAlFUaZmjVhVqO4XP_w4yxMnc"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

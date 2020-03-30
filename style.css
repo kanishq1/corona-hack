@@ -50,3 +50,10 @@ label.validation-error{
         margin-right: 5%;
     }
 }
+.dmt{
+    width:30%;
+}
+.daymonthtime{
+    display: inline-flex;
+    justify-content: space-around;
+}
